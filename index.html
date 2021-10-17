@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everypay</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <section class="nav">
+        <div class="container">
+            <div class="nav__inner">
+                <img class="nav__img" src="icons/logo.svg" alt="logo">
+                <ul class="nav__list">
+                    <li class="nav__list-item"><a href="#advantage">Как это работает?</a></li>
+                    <li class="nav__list-item"><a href="#forWhom">Для кого</a></li>
+                    <li class="nav__list-item"><a href="#cases">Кейсы</a></li>
+                    <li class="nav__list-item"><a href="#tarrifs">Тарифы</a></li>
+                    <li class="nav__list-item"><a href="#footer">Безопасность</a></li>
+                </ul>
+                <div class="nav__link-lang">
+                    <a href="#" class="nav__link-ru">RU</a>
+                    <a href="#" class="nav__link-eng">ENG</a>
+                </div>
+                <button class="nav__btn-connect">Подключиться</button>
+                <section class="hamburger">
+                    <div class="menu-btn" onclick="burger();">
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </section>
+            </div>
+            <div class="hamburger__wrapper hidden">
+                <nav class="hamburger__nav">
+                    <li><a href="#advantage" onclick="hideMenu();">Как это работает?</a></li>
+                    <li><a href="#forWhom" onclick="hideMenu();">Для кого</a></li>
+                    <li><a href="#cases" onclick="hideMenu();">Кейсы</a></li>
+                    <li><a href="#footer" onclick="hideMenu();">Безопасность</a></li>
+                    <li><a href="#footer" onclick="hideMenu();">Контакты</a></li>
+                    <li><button class="hamburger__nav-button">Вход</button></li>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="advantage" id="advantage">
+        <div class="advantage__swiper swiper">
+            <div class="advantage__inner swiper-wrapper">
+                <div class="advantage__block swiper-slide">
+                    <div class="advantage__info">
+                        <h2 class="advantage__title">Не пропускайте важные оплаты</h2>
+                        <p class="advantage__text">Если от них зависят ваши проекты или старт рекламных
+                            кампаний
+                        </p>
+                        <form class="advantage__form form" action="#">
+                            <input class="form__email" placeholder="Введите email" type="email">
+                            <input class="form__button" type="submit" value="Узнать">
+                        </form>
+                    </div>
+                    <img class="advantage__img" src="images/advantage1.svg" alt="money" id="adv__img1">
+
+                </div>
+
+                <div class="advantage__block swiper-slide">
+                    <div class="advantage__info">
+                        <h2 class="advantage__title">Сократите издержки
+                            на бухгалтерию 
+                            и коммуникации</h2>
+                        <p class="advantage__text">Получайте информацию о платежах на счет компании там, где
+                            вам
+                            удобно</p>
+                        <form class="advantage__form form" action="#">
+                            <input class="form__email" placeholder="Введите email" type="email">
+                            <input class="form__button" type="submit" value="Узнать">
+                        </form>
+
+                    </div>
+                    <img class="advantage__img" src="images/advantage2.svg" alt="pig" id="adv__img2">
+
+                </div>
+
+                <div class="advantage__block swiper-slide">
+                    <div class="advantage__info ">
+                        <h2 class="advantage__title">Создавайте собственные сценарии действий </h2>
+                        <p class="advantage__text">при поступлении денег на счет вашей компании</p>
+                        <form class="advantage__form form" action="#">
+                            <input class="form__email" placeholder="Введите email" type="email">
+                            <input class="form__button" type="submit" value="Узнать">
+                        </form>
+                    </div>
+                    <img class="advantage__img" src="images/advantage3.svg" alt="screen" id="adv__img3">
+                </div>
+
+                <div class="advantage__block swiper-slide">
+                    <div class="advantage__info">
+                        <h2 class="advantage__title">Реагируйте
+                            на платежи так быстро,  как они поступают
+                            на ваш счет</h2>
+                        <form class="advantage__form form" action="#">
+                            <input class="form__email" placeholder="Введите email" type="email">
+                            <input class="form__button" type="submit" value="Узнать">
+                        </form>
+
+                    </div>
+                    <img class="advantage__img" src="images/advantage4.svg" alt="arm" id="adv__img4">
+                </div>
+
+            </div>
+            <div class="advantage__swiper-pagination swiper-pagination"></div>
+        </div>
+        <div class="container">
+            <div class="advantage__last">
+                <img src="images/Chat.svg" alt="chat" class="advantage__last-img">
+                <div class="advantage__last-info">
+                    <div class="advantage__last-title">Мы предлагаем вам простой инструмент, чтобы
+                        автоматизировать информирование о поступающих оплатах.</div>
+                    <div class="advantage__last-text">Бухгалтер на карантине, а директор недоступен? Ответственный
+                        сотрудник моментально узнает
+                        о поступлении денег на счет компании.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__inner">
+                <h2 class="about__title">Как это работает</h2>
+                <ul class="about__info">
+                    <li class="about__info-item">
+                        <img class="about__info-img" src="images/about1.svg" alt="money">
+                        <div class="about__info-text">Подключите свой <br> банковский счет</div>
+                    </li>
+                    <li class="about__info-item">
+                        <img class="about__info-img" src="images/about2.svg" alt="icons">
+                        <div class="about__info-text">Выберите, куда и кому <br> отправлять&nbsp;информацию</div>
+                    </li>
+                    <li class="about__info-item">
+                        <img class="about__info-img" src="images/about3.svg" alt="clock">
+                        <div class="about__info-text"><span>Получайте информацию <br>
+                                о поступивших оплатах</span></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="automate">
+        <div class="container automate__container">
+            <div class="automate__inner">
+                <h2 class="automate__title">Автоматизируйте <br> бизнес-процессы</h2>
+                <div class="automate__info">
+                    <p class="automate__info-text">Подключайте привычные приложения, которые <br> вы используете в
+                        работе.</p>
+                    <form class="automate__info-form form" action="#">
+                        <input class="form__email automate__form" placeholder="Введите email" type="email">
+                        <input class="form__button automate__button" type="submit" value="Узнать">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banks">
+        <div class="container">
+            <h2 class="banks__title">Банки и интеграции</h2>
+            <div class="banks__inner">
+                <div class="banks__info">
+                    <p class="banks__info-subtitle">Банки</p>
+                    <ul class="banks__info-list">
+                        <li class="banks__info-item"><img src="images/bankdot.svg" alt="dot" width="171.49px"
+                                height="110.05px"></li>
+                        <li class="banks__info-item tinkoff"><img src="images/banktinkoff.svg" alt="tinkoff"
+                                width="195.27px" height="93.73px"></li>
+                        <li class="banks__info-item"><img src="images/bankmodule.svg" alt="module" width="173px"
+                                height="100px"></li>
+                    </ul>
+                    <img class="banks__info-1c" src="images/1C.png" alt="1c" >
+                </div>
+
+
+                <div class="upload__info">
+                    <p class="upload__info-subtitle">Интеграции</p>
+                    <ul class="upload__info-list">
+                        <li class="upload__info-item"> <img class="upload__info-img" src="images/upload1.svg"
+                                alt="bell">
+                            <p class="upload__info-text">Push-web уведомления</p>
+                        </li>
+                        <li class="upload__info-item"> <img class="upload__info-img" src="images/upload2.svg"
+                                alt="email">
+                            <p class="upload__info-text">E-mail уведомления</p>
+                        </li>
+                        <li class="upload__info-item"> <img class="upload__info-img" src="images/upload3.svg"
+                                alt="telegram">
+                            <p class="upload__info-text">Telegram</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="for" id="forWhom">
+        <div class="container">
+            <div class="for__inner">
+                <h2 class="for__title">Для кого</h2>
+                <div class="for__content">
+                    <ul class="for__list">
+                        <li class="for__item">
+                            <img src="images/Fortree.svg" alt="tree" class="for__img" width="100.49px" height="161.9px">
+                            <div class="for__box">
+                                <p class="for__subtitle">Малый бизнес</p>
+                                <p class="for__text">Скорость получения  информации о платежах 
+                                    и минимизация издержек</p>
+                            </div>
+                        </li>
+                        <li class="for__item">
+                            <img src="images/Forunicorn.svg" alt="unicorn" class="for__img" width="140px"
+                                height="159px">
+                            <div class="for__box">
+                                <p class="for__subtitle">Стартапы</p>
+                                <p class="for__text">Автоматизация <br> бизнес-процессов <br>
+                                    и бухгалтерской рутины</p>
+                            </div>
+                        </li>
+                        <li class="for__item">
+                            <img src="images/forlamp.svg" alt="lamp" class="for__img" width="174px" height="159px">
+                            <div class="for__box">
+                                <p class="for__subtitle">Разработчики</p>
+                                <p class="for__text">Быстрое внедрение своих <br> приложений для малого <br> бизнеса и
+                                    стартапов</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cases" id="cases">
+        <div class="container">
+            <div class="cases" id="cases__main">
+                <div class="cases__inner">
+                    <h2 class="cases__title">Кейсы</h2>
+                    <ul class="cases__list">
+                        <li class="cases__item">
+                            <img src="images/cases-logo.svg" alt="logo" width="164.62px" height="39px">
+                            <div class="cases__box">
+                                <p class="cases__box-text">Автоматизация <br> диджитал-агентства</p>
+                                <a class="cases__box-link" href="#">Читать кейс &#5171</a>
+                            </div>
+    
+                        </li>
+                        <li class="cases__item">
+                            <img class="cases__img" src="images/cases-logo2.svg" alt="logo" width="197.67px" height="32px">
+                            <div class="cases__box">
+                                <p class="cases__box-text">Приём платежей <br> в рекламной <br> медиа-группе</p>
+                                <a class="cases__box-link" href="#">Читать кейс &#5171</a>
+                            </div>
+    
+                        </li>
+                        <li class="cases__item">
+                            <img class="cases__img" src="images/cases-logo2.svg" alt="logo" width="197.67px" height="32px">
+                            <div class="cases__box">
+                                <p class="cases__box-text">Оптимизация бухгалтерии <br> в производственной <br> компании</p>
+                                <a class="cases__box-link" href="#">Читать кейс &#5171</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cases" id="cases-swiper">
+                <div class="cases__inner swiper">
+                    <h2 class="cases__title">Кейсы</h2>
+                    <ul class="cases__list swiper-wrapper">
+                        <li class="cases__item swiper-slide cases-slide">
+                            <img src="images/cases-logo.svg" alt="logo" width="164.62px" height="39px">
+                            <div class="cases__box">
+                                <p class="cases__box-text">Автоматизация <br> диджитал-агентства</p>
+                                <a class="cases__box-link" href="#">Читать кейс &#5171</a>
+                            </div>
+    
+                        </li>
+                        <li class="cases__item swiper-slide cases-slide">
+                            <img class="cases__img" src="images/cases-logo2.svg" alt="logo" width="197.67px" height="32px">
+                            <div class="cases__box">
+                                <p class="cases__box-text">Приём платежей <br> в рекламной <br> медиа-группе</p>
+                                <a class="cases__box-link" href="#">Читать кейс &#5171</a>
+                            </div>
+    
+                        </li>
+                        <li class="cases__item swiper-slide cases-slide">
+                            <img class="cases__img" src="images/cases-logo2.svg" alt="logo" width="197.67px" height="32px">
+                            <div class="cases__box">
+                                <p class="cases__box-text">Оптимизация бухгалтерии в производственной компании</p>
+                                <a class="cases__box-link" href="#">Читать кейс &#5171</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cases-pagination swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tarrifs" id="tarrifs">
+        <div class="container tarrifs__container">
+            <h2 class="tarrifs__title tarrifs__title-hidden">Тарифы</h2>
+            <div class="tarrifs__inner">
+                
+                <div class="tarrifs__info">
+                    <h2 class="tarrifs__title">Тарифы</h2>
+                    <p class="tarrifs__text">Everypay находится в стадии закрытого beta-теста, но у вас есть возможность
+                        присоединиться к тестированию сервиса.
+                        <br><br>
+                        Для компаний, участвующих в тестировании, сервис навсегда бесплатен. Напишите нам
+                        и мы с вами свяжемся.
+                    </p>
+                    <form class="tarrifs__form form" action="#">
+                        <input class="form__email" placeholder="Введите email" type="email">
+                        <input class="form__button" type="submit" value="Узнать">
+                    </form>
+                </div>
+                <img src="images/ruble.svg" alt="ruble" class="tarrifs__img">
+            </div>
+            <form class="tarrifs__form-hidden form" action="#">
+                <input class="form__email form__email-hidden" placeholder="Введите email" type="email">
+                <input class="form__button form__button-hidden" type="submit" value="Узнать">
+            </form>
+        </div>
+    </section>
+
+    <section class="soon">
+        <div class="container">
+            <div class="soon__inner">
+                <h2 class="soon__title">Скоро появится</h2>
+                <ul class="soon__list">
+                    <li class="soon__item">
+                        <h3 class="soon__subtitle">Интеграции с CRM-системами
+                            Битрикс 24 и amoCRM</h3>
+                        <div class="soon__box">
+                            <div class="soon__box-dash"></div>
+                            <p class="soon__text">Интегрируйте уведомления о платежах прямо 
+                                в вашу CRM, в которой работают ваши сотрудники
+                            </p>
+                            <img src="images/soon-img.svg" alt="soon" class="soon__img">
+                        </div>
+                        
+                    </li>
+                    <li class="soon__item">
+                        <h3 class="soon__subtitle">Открытое API Everypay</h3>
+                        <div class="soon__box">
+                            <div class="soon__box-dash"></div>
+                            <p class="soon__text">Подключайте свои системы и интегрируйте уведомления о поступающих
+                                платежах самостоятельно с помощью простого API Everypay</p>
+                        </div>
+                    </li>
+                    <li class="soon__item">
+                        <h3 class="soon__subtitle">Автоматическое создание платежек</h3>
+                        <div class="soon__box">
+                            <div class="soon__box-dash"></div>
+                            <p class="soon__text">Загрузите скан счета на оплату в нашу систему
+                                и в банк-клиенте автоматически будет создано платежное поручение на основании
+                                данных из счета. С помощью технологий компьютерного зрения и машинного
+                                обучения мы достигаем высокой точности и скорости работы</p>
+                        </div>
+                    </li>
+                </ul>
+                <p class="soon__new">И еще 17 нововведений</p>
+
+                <h2 class="soon__security-hidden">Безопасность</h2>
+                <div class="soon__security">
+                    <img src="images/security.svg" alt="security" class="soon__security-img">
+                    <div class="soon__security-box">
+                        <h2 class="soon__security-title">Безопасность</h2>
+                        <p class="soon__security-text">Использование Everypay полностью безопасно: подключение к
+                            банковскому счету осуществляется в режиме «только
+                            для получения выписок», а хранение информации в системе защищено
+                            и деперсонализировано.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer" id="footer">
+        <div class="container">
+            <h2 class="footer__connect-hidden">
+                Подключиться
+            </h2>
+            <div class="footer__inner">
+                <div class="footer__connect">
+                    <h2 class="footer__connect-title">
+                        Подключиться
+                    </h2>
+                    <p class="footer__connect-text">
+                        Хотите начать пользоваться системой? Напишите нам.
+                    </p>
+                    <p class="footer__connect-email"><span>email</span> <br> hello@everypay.io</p>
+                </div>
+                <form action="#" class="footer__form">
+                    <input name="name" required placeholder="Ваше имя*" type="text">
+                    <input name="email" required placeholder="Email*" type="email">
+                    <textarea required placeholder="Расскажите о своей компании*" name="textarea"></textarea>
+
+                    <button name="button" type="submit">Подключиться</button>
+                </form>
+            </div>
+            <div class="footer__end">
+                <p class="footer__end-copyright">© 2020, Everypay
+                </p>
+                <a class="footer__end-link" href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        const advantageSwiper = new Swiper('.advantage__swiper', {
+            loop: true,
+            autoHeight: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            slidesPerView: 1
+        });
+        const innerSwiper = new Swiper('.cases__inner', {
+            speed: 400,
+            slidesPerView: 'auto',
+            loop: false,
+            loopedSlides: 3,
+            spaceBetween: 20, 
+            pagination: {
+                el: '.cases-pagination',
+            },
+            autoHeight: false
+
+        });
+    </script>
+</body>
+</html>
